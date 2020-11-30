@@ -1,22 +1,25 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Project for Frontend Mentor",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alex Báez",
   "dependencies": {
-    "gatsby": "^2.24.67",
+    "@n8tb1t/use-scroll-position": "^2.0.3",
+    "animated-number-react": "^0.1.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "gatsby": "^2.24.77",
     "gatsby-image": "^2.4.20",
     "gatsby-plugin-manifest": "^2.4.33",
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sharp": "^2.6.38",
+    "gatsby-plugin-styled-components": "^3.3.14",
     "gatsby-source-filesystem": "^2.3.32",
-    "gatsby-transformer-sharp": "^2.5.16",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"
