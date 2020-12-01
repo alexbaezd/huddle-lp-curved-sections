@@ -7,11 +7,7 @@ import Users from '../components/data-users'
 import Hero from '../components/hero'
 import Services from '../components/services'
 
-/*
-  TODO: HTML5 , Web Semantic
-  In Services component
-  
-*/
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Huddle Landing Page with Curved " />

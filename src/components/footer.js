@@ -44,12 +44,16 @@ const GroupInfo = styled.div`
   }
 `
 const BrandDescription = styled.p`
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 `
 const WaveContainer = styled.section`
-  margin-bottom: -25px;
+margin-bottom:-120px;
+
+@media (min-width: 768px) {
+  margin-bottom: -99px;
+}
 `
 
 

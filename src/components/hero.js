@@ -25,7 +25,7 @@ const MainSection = styled.section`
   align-items: center;
   justify-content: center;
   height: 95vh;
-  margin: 3.5rem 1.5rem 0 0.5rem;
+  margin: 3.5rem 1.5rem 0.5rem;
   animation: 1.2s ${fadeIn} ease;
 
   @media (min-width: 768px) {
@@ -65,13 +65,14 @@ const Image = styled.img`
 
 const Hero = () => {
   const { title, description, callToAction, image } = HeaderYAMLData
-  
+  const handleClick = () => console.log("Call To Action")
+
   return (
     <Container>
       <MainSection>
         <Title>{title}</Title>
         <Description>{description}</Description>
-        <ButtonPrimary>{callToAction}</ButtonPrimary>
+        <ButtonPrimary onClick={handleClick}>{callToAction}</ButtonPrimary>
         <Image src={require(`../images/${image}`)} alt="screen-mockups" />
       </MainSection>
     </Container>

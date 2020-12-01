@@ -21,10 +21,10 @@ const Wrapper = styled.div`
   margin-left: 1rem;
   margin-right: 1rem;
   flex-wrap: wrap-reverse;
-  height: 65vh;
+  height: 70vh;
   
   @media (min-width: 768px) {
-    height: 45vh;
+    height: 40vh;
   }
 `
 const Information = styled.article`
@@ -51,12 +51,14 @@ const Description = styled.p`
   }
 `
 const Image = styled.img`
-  width:250px;
-  margin-bottom:2.5rem;
+  width:80%;
+  margin-bottom:0;
   
   @media (min-width:768px){
     width:350px;
-    margin-bottom:0;
+  }
+  @media (min-width:1112px){
+    width:450px;
   }
 `
 const WaveTop = styled.div`
@@ -67,11 +69,9 @@ const WaveBottom  = styled.div`
   transform: rotate(180deg);
 ` 
 
-const Services = () => {
+const Services = () => (
 
   
-
-  return (
     <SectionService>
 
       {ServicesData.data.map((service, index) => {
@@ -107,6 +107,5 @@ const Services = () => {
       })}
     </SectionService>
   )
-}
 
 export default Services

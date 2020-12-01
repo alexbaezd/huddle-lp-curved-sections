@@ -21,17 +21,17 @@ const fadeIn = keyframes`
 const SectionNumbers = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction:column;
   transition: 0.5s linear;
-  height: 30vh;
+  height: auto;
   margin-top:3rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  padding-bottom: 12rem;
-
+  
   @media (min-width: 768px) {
-    margin: 3.5rem 0;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding:2.4rem 0;
   }
 `
 const Item = styled.div`
@@ -73,8 +73,6 @@ const Users = () => {
 
   useScrollPosition(
     ({currPos }) => {
-      console.log(currPos.y)
-      //FIXME: this number 
       if (currPos.y > 450) {
         setHasScrolled(true)
       } else {

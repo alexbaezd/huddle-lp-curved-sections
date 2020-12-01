@@ -26,24 +26,24 @@ export const ButtonOutline = styled.button`
 export const ButtonPrimary = styled.button`
   border-radius: 25px;
   background: hsl(322, 100%, 66%);
-  border:none;
+  border: none;
   color: white;
   padding: 0.8rem 2.5rem;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: 0.5s ease;
+  min-height:50px;
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
 
-  &:focus{
-    outline:0;
+  &:focus {
+    outline: 0;
   }
-
   @media (min-width: 768px) {
-    padding: 1rem 4rem;
+    padding: 1rem 4rem; 
     font-size: 1rem;
   }
 `

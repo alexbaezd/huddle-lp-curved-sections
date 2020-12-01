@@ -10,7 +10,7 @@ const TitleNewsletter = styled.h3`
   margin-bottom: 0.8rem;
 `
 const TextNewsletter = styled.p`
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 `
