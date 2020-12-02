@@ -23,8 +23,18 @@ const FormNewsLetter = styled.form`
 
   @media (min-width: 768px) {
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-start;
   }
+`
+const Label = styled.label`
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 `
 const InputEmail = styled.input`
   border-radius: 5px;
@@ -61,15 +71,17 @@ const Newsletter = ({ newsletter, buttonNewsletter }) => {
       <TitleNewsletter>Newsletter</TitleNewsletter>
       <TextNewsletter>{newsletter}</TextNewsletter>
       <FormNewsLetter onSubmit={handleSubmit}>
-          <InputEmail
-            autoComplete="off"
-            name="emailForNewsletter"
-            value={emailForNewsletter}
-            onChange={handleInputChange}
-            type="email"
-            required
-          />
-          <ButtonSubmit type="submit">{buttonNewsletter}</ButtonSubmit>
+        <Label>Email</Label>
+        <InputEmail
+          aria-label="Email for Newsletter"
+          autoComplete="off"
+          name="emailForNewsletter"
+          value={emailForNewsletter}
+          onChange={handleInputChange}
+          type="email"
+          required
+        />
+        <ButtonSubmit type="submit">{buttonNewsletter}</ButtonSubmit>
       </FormNewsLetter>
     </>
   )
